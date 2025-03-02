@@ -1,9 +1,32 @@
 import 'package:flutter/material.dart';
 
 class AppTheme {
+  // static final ThemeData lightTheme = ThemeData(
+  //   brightness: Brightness.light,
+  //   primarySwatch: Colors.blue,
+  //   hintColor: Colors.blueAccent,
+  //   textTheme: const TextTheme(
+  //     displayLarge: TextStyle(color: Colors.black),
+  //     displayMedium: TextStyle(color: Colors.black),
+  //     displaySmall: TextStyle(color: Colors.black),
+  //     headlineLarge: TextStyle(color: Colors.black),
+  //     headlineMedium: TextStyle(color: Colors.black),
+  //     headlineSmall: TextStyle(color: Colors.black),
+  //     titleLarge: TextStyle(color: Colors.black),
+  //     titleMedium: TextStyle(color: Colors.black),
+  //     titleSmall: TextStyle(color: Colors.black),
+  //     bodyLarge: TextStyle(color: Colors.black),
+  //     bodyMedium: TextStyle(color: Colors.black),
+  //     bodySmall: TextStyle(color: Colors.black),
+  //     labelLarge: TextStyle(color: Colors.blue),
+  //     labelMedium: TextStyle(color: Colors.blue),
+  //     labelSmall: TextStyle(color: Colors.blueAccent),
+  //   ),
+  // );
+
   static final ThemeData lightTheme = ThemeData(
     brightness: Brightness.light,
-    primarySwatch: Colors.blue,
+    colorSchemeSeed: const Color.fromARGB(255, 210, 25, 59),
     hintColor: Colors.blueAccent,
     textTheme: const TextTheme(
       displayLarge: TextStyle(color: Colors.black),
@@ -26,7 +49,7 @@ class AppTheme {
 
   static final ThemeData darkTheme = ThemeData(
     brightness: Brightness.dark,
-    primarySwatch: Colors.blueGrey,
+    colorSchemeSeed: const Color.fromARGB(255, 210, 25, 59),
     hintColor: Colors.blueGrey[700],
     textTheme: const TextTheme(
       displayLarge: TextStyle(color: Colors.white),

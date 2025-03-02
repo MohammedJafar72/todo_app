@@ -3,16 +3,17 @@ import 'package:uuid/uuid.dart';
 final Uuid _uuid = Uuid();
 
 class Todo {
-  final String id;
+  final String? id;
   final String title;
   final String description;
   final TodoStatus status;
 
   Todo({
-    required this.title,
+    String? id,
+    this.title = "No Title",
     this.description = "No description",
     this.status = TodoStatus.notStarted,
-  }) : id = _uuid.v4();
+  }) : id = id ?? _uuid.v4();
 }
 
 enum TodoStatus { notStarted, inProgress, completed, all }
